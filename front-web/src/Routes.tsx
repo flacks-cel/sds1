@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
+import Charts from './pages/Charts';
 import Records from './pages/Records';
+
 
 const Routes = () => (
 
@@ -15,8 +17,10 @@ const Routes = () => (
     <Route path="/records">
         <Records/>
     </Route>
+    <Route path="/charts">
+        <Charts/>
+    </Route>
     </Switch>
-        
     </BrowserRouter>
 );
 
